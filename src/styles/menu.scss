@@ -1,0 +1,47 @@
+@import "..//styles/variables/index.scss";
+
+.menu {
+  &__wrapper {
+    width: 100%;
+    max-width: 300px;
+    border-right: 2px solid $primary-100;
+    display: flex;
+    flex-flow: column;
+    gap: 30px;
+    padding-bottom: 30px;
+    padding-right: 40px;
+    max-height: 90vh;
+    overflow: hidden scroll;
+  }
+
+  &__item {
+  }
+  &__title {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 26px;
+  }
+  &__list {
+    display: flex;
+    flex-flow: column;
+    gap: 15px;
+    margin-left: 10px;
+  }
+  &__list-item {
+  }
+  &__link {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    color: $gray-500;
+    transition: all $transition-200ms;
+    font-size: 16px;
+    line-height: 21px;
+
+    &:hover {
+      transform: translateX(5px);
+      color: $neutral-light;
+    }
+  }
+}
