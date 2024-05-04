@@ -1,21 +1,37 @@
+import {
+  TopDeals,
+  ChartBox,
+  TopBlock3,
+  TopBlock4,
+  TopBlock5,
+  TopBlock6,
+  TopBlock7,
+  TopBlock8,
+  TopBlock9,
+} from "../components";
 import "../styles/home.scss";
 
 export default function Home() {
+  const blocks = [
+    <TopDeals />,
+
+    <ChartBox />,
+    <TopBlock3 />,
+    <TopBlock4 />,
+    <TopBlock5 />,
+    <TopBlock6 />,
+    <TopBlock7 />,
+    <TopBlock8 />,
+    <TopBlock9 />,
+  ];
+
   return (
-    <div className="content">
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima dolorum
-        exercitationem, dolor quos impedit quibusdam quae eos odio facilis
-        consequuntur architecto tempora hic obcaecati nisi laudantium dolores
-        natus beatae, illo, consequatur laboriosam nemo. Qui cupiditate nemo
-        aspernatur iusto nam veritatis sed, soluta impedit odit debitis veniam
-        ut at odio saepe possimus reprehenderit tenetur dolorum quasi,
-        voluptates ratione. Fuga itaque tenetur, est inventore, fugiat tempore
-        officia, sequi ipsum nihil iure dicta. Assumenda repellat nulla sunt
-        asperiores aliquid delectus? Inventore impedit ipsam iste ducimus
-        distinctio magnam vel doloribus quia totam doloremque? Id dolores est
-        soluta eos cupiditate libero eaque temporibus aliquid officia!
-      </p>
-    </div>
+    <ul className="home">
+      {blocks.map((item, index) => (
+        <li className={`home__item home__item--${index + 1}`} key={index}>
+          {item}
+        </li>
+      ))}
+    </ul>
   );
 }

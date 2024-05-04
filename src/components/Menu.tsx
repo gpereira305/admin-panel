@@ -1,26 +1,26 @@
 import { Link } from "react-router-dom";
 import { Image } from "../UI";
-import "../styles/menu.scss";
 import { menuData } from "../data";
+import "../styles/menu.scss";
 
 export default function Menu() {
   return (
     <div className="menu">
       <ul className="menu__wrapper element-scroll">
-        {menuData.map((item) => (
-          <li className="menu__item" key={item.title}>
-            <h2 className="menu__title">{item.title}</h2>
+        {menuData.map(({ id, title, listItems }) => (
+          <li className="menu__item" key={id}>
+            <h2 className="menu__title">{title}</h2>
             <ul className="menu__list">
-              {item.listItems.map((link) => (
-                <li className="menu__list-item" key={link.title}>
-                  <Link className="menu__link" to={link.url}>
+              {listItems.map(({ id, title, url, icon }) => (
+                <li className="menu__list-item" key={id}>
+                  <Link className="menu__link" to={url}>
                     <Image
-                      iconSrc={link.icon}
-                      IconAlt={link.title}
-                      iconTitle={link.title}
-                      iconStyle={{ width: "20px", height: "20px" }}
+                      imgSrc={icon}
+                      imgAlt={title}
+                      imgTitle={title}
+                      imgStyle={{ width: "20px", height: "20px" }}
                     />
-                    {link.title}
+                    {title}
                   </Link>
                 </li>
               ))}

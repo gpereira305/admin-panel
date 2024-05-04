@@ -1,3 +1,12 @@
 export { default as Header } from "./Header";
 export { default as Footer } from "./Footer";
 export { default as Menu } from "./Menu";
+export { default as TopDeals } from "./UI/TopDeals";
+export { default as ChartBox } from "./UI/ChartBox";
+export { default as TopBlock3 } from "./UI/TopBlock3";
+export { default as TopBlock4 } from "./UI/TopBlock4";
+export { default as TopBlock5 } from "./UI/TopBlock5";
+export { default as TopBlock6 } from "./UI/TopBlock6";
+export { default as TopBlock7 } from "./UI/TopBlock7";
+export { default as TopBlock8 } from "./UI/TopBlock8";
+export { default as TopBlock9 } from "./UI/TopBlock9";

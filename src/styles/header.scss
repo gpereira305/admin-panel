@@ -12,8 +12,7 @@
     align-items: center;
     height: inherit;
   }
-  &__logo {
-  }
+
   &__icons {
     display: flex;
     gap: 20px;
@@ -23,9 +22,11 @@
       cursor: pointer;
     }
   }
+
   &__notification {
     position: relative;
   }
+
   &__counter {
     position: absolute;
     top: -7px;
@@ -40,6 +41,7 @@
     line-height: 16px;
     text-align: center;
   }
+
   &__profile {
     display: flex;
     align-items: center;

@@ -30,13 +30,23 @@ export { default as viewIcon } from "../assets/icons/view.svg";
 
 // IMAGE
 export const Image = ({
-  iconSrc,
-  iconStyle,
-  IconAlt,
-  iconTitle,
+  imgClass,
+  imgSrc,
+  imgStyle,
+  imgAlt,
+  imgTitle,
 }: {
-  iconSrc: string;
-  iconStyle: object;
-  IconAlt: string;
-  iconTitle: string;
-}) => <img src={iconSrc} alt={IconAlt} title={iconTitle} style={iconStyle} />;
+  imgClass: string;
+  imgSrc: string;
+  imgStyle: object;
+  imgAlt: string;
+  imgTitle: string;
+}) => (
+  <img
+    className={imgClass}
+    src={imgSrc}
+    alt={imgAlt}
+    title={imgTitle}
+    style={imgStyle}
+  />
+);

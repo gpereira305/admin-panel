@@ -20,57 +20,63 @@ export default function Header() {
       <div className="header__inner">
         <Link to="/" className="header__logo">
           <Image
-            iconSrc={logoIcon}
-            IconAlt="logo"
-            iconTitle="logo"
-            iconStyle={{ width: "50px", height: "50px" }}
+            imgClass=""
+            imgSrc={logoIcon}
+            imgAlt="logo"
+            imgTitle="logo"
+            imgStyle={{ width: "50px", height: "50px" }}
           />
         </Link>
 
         <div className="header__icons">
           <Image
-            iconSrc={searchIcon}
-            IconAlt="Pesquisar"
-            iconTitle="Pesquisar"
-            iconStyle={iconsStyleProperties}
+            imgClass=""
+            imgSrc={searchIcon}
+            imgAlt="Pesquisar"
+            imgTitle="Pesquisar"
+            imgStyle={iconsStyleProperties}
           />
           <Image
-            iconSrc={appIcon}
-            IconAlt="App"
-            iconTitle="App"
-            iconStyle={iconsStyleProperties}
+            imgClass=""
+            imgSrc={appIcon}
+            imgAlt="App"
+            imgTitle="App"
+            imgStyle={iconsStyleProperties}
           />
           <Image
-            iconSrc={expandIcon}
-            IconAlt="Expandir"
-            iconTitle="Expandir"
-            iconStyle={iconsStyleProperties}
+            imgClass=""
+            imgSrc={expandIcon}
+            imgAlt="Expandir"
+            imgTitle="Expandir"
+            imgStyle={iconsStyleProperties}
           />
           <div className="header__notification">
             <Image
-              iconSrc={notificationsIcon}
-              IconAlt="Notificações"
-              iconTitle="Notificações"
-              iconStyle={{}}
+              imgClass=""
+              imgSrc={notificationsIcon}
+              imgAlt="Notificações"
+              imgTitle="Notificações"
+              imgStyle={{}}
             />
             <span className="header__counter">{counter(10)}</span>
           </div>
 
           <figure className="header__profile" style={{}}>
             <Image
-              iconSrc="https://picsum.photos/200"
-              IconAlt="Jefferson"
-              iconTitle="Jefferson"
-              iconStyle={{}}
+              imgSrc="https://picsum.photos/200"
+              imgAlt="Jefferson"
+              imgTitle="Jefferson"
+              imgStyle={{}}
             />
             <figcaption>Jefferson</figcaption>
           </figure>
 
           <Image
-            iconSrc={settingsIcon}
-            IconAlt="Ajustes"
-            iconTitle="Ajustes"
-            iconStyle={iconsStyleProperties}
+            imgClass=""
+            imgSrc={settingsIcon}
+            imgAlt="Ajustes"
+            imgTitle="Ajustes"
+            imgStyle={iconsStyleProperties}
           />
         </div>
       </div>

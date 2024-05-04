@@ -1,0 +1,57 @@
+@import "../styles/variables/index.scss";
+
+.topdeals {
+  &__title {
+    font-size: 32px;
+    line-height: normal;
+    font-weight: 700;
+    color: $neutral-light;
+    margin-bottom: 30px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  &__item {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  &__img {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+    border-radius: 100%;
+    object-fit: cover;
+    border: 1px solid $primary-100;
+  }
+
+  &__info {
+    display: flex;
+    flex-flow: column;
+    gap: 3px;
+  }
+
+  &__username {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    color: $neutral-light;
+  }
+
+  &__email {
+    font-size: 14px;
+    line-height: 18px;
+    color: $gray-400;
+    color: $gray-400;
+  }
+
+  &__amount {
+    margin-left: auto;
+  }
+}
